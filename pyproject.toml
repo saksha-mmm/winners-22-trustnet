@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "trustnet"
+version = "0.1.0"
+description = "Decentralized trust network for open-source contributions — Hacktoberfest 2026 Hack Day Sonipat, Problem 07"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.scripts]
+trustnet = "trustnet.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["trustnet*"]
